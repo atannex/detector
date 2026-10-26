@@ -1,0 +1,77 @@
+{
+    "name": "atannex/detector",
+    "description": "Device, OS, browser and bot detection for Laravel: User-Agent and Client Hints merged into one answer, a client probe for what headers cannot tell (iPadOS, screen, installed PWAs), categorised bots with AI crawlers and reverse-DNS verification, in-app browsers and WebViews, Blade directives, route middleware, per-user device tracking with new-device events, and a test fake.",
+    "keywords": [
+        "laravel",
+        "device",
+        "detection",
+        "user-agent",
+        "client-hints",
+        "mobile",
+        "tablet",
+        "browser",
+        "bot",
+        "crawler",
+        "ai-crawler",
+        "webview"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Atanga Leke Collins",
+            "email": "atangageihlekecollins@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/console": "^11.0|^12.0",
+        "illuminate/database": "^11.0|^12.0",
+        "illuminate/http": "^11.0|^12.0",
+        "illuminate/routing": "^11.0|^12.0",
+        "illuminate/support": "^11.0|^12.0",
+        "illuminate/view": "^11.0|^12.0"
+    },
+    "require-dev": {
+        "matomo/device-detector": "^6.4",
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpunit/phpunit": "^11.5"
+    },
+    "suggest": {
+        "matomo/device-detector": "Marketing names for tens of thousands of device models, through the 'matomo' driver (^6.4)."
+    },
+    "autoload": {
+        "psr-4": {
+            "Atannex\\Detector\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Atannex\\Detector\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Atannex\\Detector\\DetectorServiceProvider"
+            ],
+            "aliases": {
+                "Detector": "Atannex\\Detector\\Facades\\Detector"
+            }
+        },
+        "branch-alias": {
+            "dev-main": "1.x-dev"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
