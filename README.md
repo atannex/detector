@@ -1,8 +1,7 @@
 # atannex/detector
 
-[![Tests](https://github.com/atannex/detector/actions/workflows/tests.yml/badge.svg)](https://github.com/atannex/detector/actions/workflows/tests.yml)
 [![PHP](https://img.shields.io/badge/PHP-8.2%2B-777BB4?logo=php&logoColor=white)](composer.json)
-[![Laravel](https://img.shields.io/badge/Laravel-11%20%7C%2012-FF2D20?logo=laravel&logoColor=white)](composer.json)
+[![Laravel](https://img.shields.io/badge/Laravel-11%20%7C%2012%20%7C%2013-FF2D20?logo=laravel&logoColor=white)](composer.json)
 [![License: MIT](https://img.shields.io/badge/License-MIT-2ea44f.svg)](LICENSE)
 
 Device detection for Laravel that reads everything a client sends, not just the User-Agent: what kind of device it is, who made it, its OS, browser and engine, whether it is a bot (and which kind, AI crawlers included), whether it is an app's built-in browser, and which devices each of your users signs in from.
