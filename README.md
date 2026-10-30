@@ -7,11 +7,3 @@ Tells a Laravel app who is visiting: which device, operating system and browser,
 ```bash
 composer require atannex/detector
 ```
-
-## Documentation
-
-The full guide is in [docs/overview.md](docs/overview.md).
-
-## License
-
-MIT.
